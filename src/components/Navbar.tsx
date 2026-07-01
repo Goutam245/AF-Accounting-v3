@@ -104,7 +104,7 @@ export const Navbar = ({ topOffset = 0 }: { topOffset?: number }) => {
       <nav className="hidden lg:flex items-center justify-between gap-6 px-6 xl:px-12 h-[76px]">
         <div className="flex-shrink-0"><Logo /></div>
 
-        <div className="flex items-center gap-6 xl:gap-8 text-navy whitespace-nowrap min-w-0">
+        <div className="flex items-center gap-6 xl:gap-8 text-navy whitespace-nowrap flex-1 justify-center">
           <RNavLink to="/" end className={({ isActive }) => isActive ? "text-accent" : "hover:text-accent transition-colors"} style={{ padding: "8px 4px", fontSize: 14, fontWeight: 500 }}>
             {t("Home", "Accueil")}
           </RNavLink>
